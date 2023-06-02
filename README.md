@@ -3,3 +3,4 @@
 * git status
 * git add index.html
 * git commit -m "mi primera página"
+* git add -A
