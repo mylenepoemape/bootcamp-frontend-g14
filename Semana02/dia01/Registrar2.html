@@ -25,19 +25,18 @@
                 <h1>Crea una cuenta</h1>
                  <h2>Ingresa la siguiente información para registrarte.</h2>
              </hgroup>
-
              <tbody >
              <table style="border-collapse: collapse;" margen="0" borde="0" padding="0">
                    <tbody style="border: hidden">
                     <tr colspan="2" style="border: hidden">
-                        <td style="border: hidden" aling="Left"> 
-                        <label margen="0">
+                        <td style="border: hidden" margen="o" padding=0 borde=0 añinfs="Left"> 
+                        <label margen="0"> Nombre
                             <input type="text" name="nombre" 
                                 placeholder="Nombres" minlength="2" maxlength="35" required/>
                         </label>
                         </td>
-                        <td style="border: hidden" aling="right"> 
-                            <label>
+                        <td style="border: hidden" align="right"> 
+                            <label margen="0"> Apellidos
                              <input type="text" name="apellido"
                                  placeholder="apellidos" minlength="2" maxlength="35" required/>
                             </label>
@@ -46,24 +45,55 @@
                     </tr>
                     </tbody>
              </table>
+             <label>Edad
+                <input type="number" name="Edad" placeholder="Ej. 19"  min="0" max="99" requiered/>
+           </label>
+           <label> 
+            Fecha de nacimiento
+            <input type="date" name="dia"/>
+            </label>
+            <label for="">
+                Genero
+                <select required name="genero" >
+                 <option value="">Selecciona tu género</option>
+                 <option value="M">Masculino</option>
+                 <option value="F">Femenino</option>
+                </select>  
+            </label>
                 <label>
                     <input type="email" name="coreo"
                     placeholder="Email Ej user@gmail.com" requiered/>
                 </label>
                 <label>
+                    Dirección
+                    <input type="text" placeholder="Dirección"  value="">
+                </label>    
+                <label>
+                    <input type="text" placeholder="Dirección línea 2"  value="">
+                </label>  
+                <label>
+                    Teléfono
                     <input type="tel" name="teléfono" 
                         pattern="\+[0-9]{2} [0-9]{9}" placeholder="+51 999999999" required/>
                 </label>
                 <label>
-                    <input type="Password" name="clave"
-                        placeholder="Password" 
-                        required minlength="6" required/>
-                </label>
+                    Código Postal
+                    <input type="text" name="codpostal" 
+                        pattern="\[1-4]{2} [0-9]{3}" placeholder="Ej 14001" required/>
+                </label>   
                 <label>
-                    <input type="Password" name="reclave"
-                        placeholder="Confirmar password" 
-                        required minlength="6" required/>
+                    Ciudad
+                    <input type="text" placeholder="Ej Chiclayo"  value="">
+                </label>        
+                <label>
+                    Subir firma
+                    <input type="file" placeholder="Choose file" >
+                </label>  
+                <label for="">
+                    <input type="checkbox" name="politica" checked/>
+                    Acepto los términos y condiciones políticas
                 </label>
+
                 <label>
                     <input type="submit" value="Registrarse">
                 </label>
