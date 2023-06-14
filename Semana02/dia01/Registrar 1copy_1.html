@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-them="Light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+<style>
+        main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+</style>
+</head>
+<body>
+    <main>
+        <main class="container"> 
+            <form action="">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                <img src="https://placehold.co/80.png?text={vv}" />
+            </td>
+        </tr>
+                    <tr>
+                        <td colspan="2">
+                <hgroup>
+                    <h1>Crea una cuenta</h1>
+                    <h2>Ingresa la siguiente información para registrarte.</h2>
+                </hgroup>
+            </td>
+        </tr>
+                    <tr>
+                    <td>
+                    <input type="text" name="nombre" 
+                   placeholder="Nombres" minlength="2" maxlength="35" required/>
+                 
+                    </td>
+                    <td>
+                    <input type="text" name="apellido"
+                    placeholder="apellidos" minlength="2" maxlength="35" required/>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td colspan="2">
+            
+                <label>
+                    <input type="email" name="coreo"
+                    placeholder="Email Ej user@gmail.com" requiered/>
+                </label>
+
+                <tr>
+                    <td colspan="2">
+                <label>
+                    <input type="tel" name="telefono" 
+                    pattern="\+[0-9]{2} [0-9]{9}" placeholder="+51 999999999" required/>
+                </label>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                <label>
+                    <input type="Password" name="clave"
+                    placeholder="Password" 
+                    required minlength="6" required/>
+                </label>
+            </td>
+        </tr>
+                <tr>
+                    <td colspan="2">
+                <label for="">
+                    <input type="Password" name="reclave"
+                    placeholder="Confirmar password" 
+                    required minlength="6" required/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Registrarse">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>
+                    Ya tienes una cuenta? 
+                    <a href="registrar.html">Accede desde aquí</a>
+                </p>
+            </td>
+        </tr>
+            </table>
+            </form>
+        </main>
+    </main>
+</body>
+</html>
