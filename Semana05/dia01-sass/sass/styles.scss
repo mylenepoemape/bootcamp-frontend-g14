@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixin';
+@import 'card';
+
+$primary-color: red;
+
+body {
+    background-color: $primary-color
+    text-align center;
+}
+
